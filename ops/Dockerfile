@@ -15,5 +15,6 @@ RUN wget -q "https://go.dev/dl/go${GO_VERSION}.linux-amd64.tar.gz" -O /src/go.ta
     && echo 'export GOPATH=$HOME/go' >> $HOME/.bashrc \
     && echo 'export PATH=$PATH:$GOPATH/bin' >> $HOME/.bashrc \
     && /usr/local/go/bin/go install golang.org/x/tools/cmd/goimports@latest \
-    && /usr/local/go/bin/go install golang.org/x/tools/gopls@latest
+    && /usr/local/go/bin/go install golang.org/x/tools/gopls@latest \
+    && /usr/local/go/bin/go install golang.org/x/tools/go/analysis/passes/shadow/cmd/shadow@latest
 
