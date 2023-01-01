@@ -1,0 +1,6 @@
+# github.com/learning-go-book/formatter v0.0.0-20200921021027-5abc380940ae
+## explicit; go 1.15
+github.com/learning-go-book/formatter
+# github.com/shopspring/decimal v1.3.1
+## explicit; go 1.13
+github.com/shopspring/decimal

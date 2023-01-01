@@ -3,7 +3,7 @@ ARG FEDORA_ARCH=x86_64
 FROM registry.fedoraproject.org/fedora:$FEDORA_VERSION-$FEDORA_ARCH
 
 #VSCode Dependencies
-RUN dnf install -y --refresh glibc libgcc libstdc++ python ca-certificates tar wget tree vim make \ 
+RUN dnf install -y --refresh ncurses less glibc libgcc libstdc++ python ca-certificates tar wget tree vim make \ 
     && dnf clean all
 
 WORKDIR /src
